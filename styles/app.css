@@ -1,0 +1,82 @@
+/* ! Layout */
+
+.wrapper {
+    min-height: 100vh;  
+    padding-top: 9rem;
+    box-sizing: border-box;
+
+    background-color: var(--white);
+    color: var(--dark);
+
+    transition: all var(--animation) ease;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* ! Content */
+
+.logo img {border-radius: 1rem}
+
+
+.dark-theme {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.btn {
+    min-width: 100px;
+    padding: .6rem 1.7rem;
+
+    font: 500 1rem/1 var(--font-family);
+    white-space: nowrap;
+
+    border-radius: var(--broder-radius);
+
+    cursor: pointer;
+    transition: all var(--animation) ease;
+    user-select: none;
+}
+
+.btn__icon {
+    min-width: auto;
+    padding: .5rem;
+}
+
+/* ! Text */
+
+.text {font: 400 1rem/1.2 var(--font-family)}
+
+/* ? State  */
+
+.btn_blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn_blue:hover {background-color: var(--blue-hover)}
+
+.btn_light-blue {
+    background-color: var(--light-blue);
+    color: var(--blue);
+}
+
+.btn_light-blue:hover {background-color: var(--light-blue-hover)}
+
+.text_blue {color: var(--blue)}
+
+/* ? Media */
+@media (max-width: 1025px ) {
+    .container {width: 80%}
+}
+
+@media (max-width: 450px ) {
+    .container {width: 85%}
+}

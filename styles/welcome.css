@@ -1,0 +1,29 @@
+.welcome {
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.welcome__title {
+    letter-spacing: -2.4px;
+    font: 600 4rem/1.1 var(--font-family);
+}
+
+.welcome__text {margin-bottom: 3.5rem}
+
+.welcome__text * {margin-bottom: 1rem}
+
+.welcome__bots * {margin-bottom: 1rem}
+
+.mockup {height: 70vh}
+
+@media (max-width: 770px) {
+    .welcome {
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .welcome__text {margin-bottom: 2rem}
+
+    .welcome__title {font-size: 3rem}
+}
